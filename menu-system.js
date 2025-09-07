@@ -259,7 +259,7 @@ class MenuSystem {
                     "subItems": [
                         {
                             "name": "GitHub",
-                            "url": `https://github.com/${this.config?.get('github.username') || 'jetsharklambo'}`,
+                            "url": `https://github.com/${this.config?.get('github.username') || 'yourusername'}`,
                             "icon": "github",
                             "action": "external_link"
                         }

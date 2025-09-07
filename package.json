@@ -28,13 +28,13 @@
     "blog",
     "github-api"
   ],
-  "author": "Jetshark Lambo",
+  "author": "Your Name",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/jetsharklambo/xmbfolio.git"
+    "url": "https://github.com/yourusername/yourrepo.git"
   },
-  "homepage": "https://github.com/jetsharklambo/xmbfolio#readme",
+  "homepage": "https://github.com/yourusername/yourrepo#readme",
   "engines": {
     "node": ">=14.0.0"
   },
@@ -59,6 +59,6 @@
   },
   "funding": {
     "type": "individual",
-    "url": "https://github.com/sponsors/jetsharklambo"
+    "url": "https://github.com/sponsors/yourusername"
   }
 }

@@ -16,22 +16,22 @@ class XMBConfig {
         
         return {
             // Site Information
-            siteTitle: envConfig.SITE_TITLE || 'Jetshark Lambo',
-            username: envConfig.USERNAME || 'Jetsharklambo',
-            bioUrl: envConfig.BIO_URL || 'https://maximo.is/',
+            siteTitle: envConfig.SITE_TITLE || 'Your Name',
+            username: envConfig.USERNAME || 'yourusername',
+            bioUrl: envConfig.BIO_URL || 'https://yourwebsite.com/',
             
             // Social Links
             github: {
-                username: envConfig.GITHUB_USERNAME || 'jetsharklambo',
-                repo: envConfig.GITHUB_REPO || 'jetsharklambo/xmbfolio'
+                username: envConfig.GITHUB_USERNAME || 'yourusername',
+                repo: envConfig.GITHUB_REPO || 'yourusername/yourrepo'
             },
             twitter: {
-                handle: envConfig.TWITTER_HANDLE || '0xJetsharkLambo',
-                url: envConfig.TWITTER_URL || 'https://x.com/0xJetsharkLambo'
+                handle: envConfig.TWITTER_HANDLE || 'yourhandle',
+                url: envConfig.TWITTER_URL || 'https://x.com/yourhandle'
             },
             farcaster: {
-                username: envConfig.FARCASTER_USERNAME || 'jetsharklambo',
-                url: envConfig.FARCASTER_URL || 'https://farcaster.xyz/jetsharklambo'
+                username: envConfig.FARCASTER_USERNAME || 'yourusername',
+                url: envConfig.FARCASTER_URL || 'https://farcaster.xyz/yourusername'
             },
             
             // Blog System
@@ -46,7 +46,7 @@ class XMBConfig {
             
             // Menu System
             menu: {
-                githubRepo: envConfig.MENU_GITHUB_REPO || envConfig.GITHUB_REPO || 'jetsharklambo/xmbfolio',
+                githubRepo: envConfig.MENU_GITHUB_REPO || envConfig.GITHUB_REPO || 'yourusername/yourrepo',
                 menuPath: envConfig.MENU_PATH || 'v4',
                 menuFile: envConfig.MENU_FILE || 'menu-structure.json',
                 get menuUrl() {

@@ -33,11 +33,11 @@
       "description": "My Work & Creations",
       "subItems": [
         {
-          "name": "Saltfree",
-          "url": "http://saltfree.vercel.app/",
+          "name": "Project One",
+          "url": "https://yourproject.com",
           "icon": "gamepad",
           "action": "external_link",
-          "description": "Web3 gaming platform"
+          "description": "Your amazing project"
         },
         {
           "name": "XMBFolio",
