@@ -1,0 +1,98 @@
+{
+  "menuItems": [
+    {
+      "id": "contact",
+      "title": "{username}",
+      "icon": "user",
+      "description": "Contact & Social Links",
+      "subItems": [
+        {
+          "name": "GitHub",
+          "url": "https://github.com/{github.username}",
+          "icon": "github",
+          "action": "external_link"
+        },
+        {
+          "name": "Farcaster",
+          "url": "{farcaster.url}",
+          "icon": "globe",
+          "action": "external_link"
+        },
+        {
+          "name": "Twitter",
+          "url": "{twitter.url}",
+          "icon": "twitter",
+          "action": "external_link"
+        }
+      ]
+    },
+    {
+      "id": "projects",
+      "title": "Projects",
+      "icon": "folder",
+      "description": "My Work & Creations",
+      "subItems": [
+        {
+          "name": "Saltfree",
+          "url": "http://saltfree.vercel.app/",
+          "icon": "gamepad",
+          "action": "external_link",
+          "description": "Web3 gaming platform"
+        },
+        {
+          "name": "XMBFolio",
+          "url": "https://github.com/{github.username}/xmbfolio",
+          "icon": "github",
+          "action": "external_link",
+          "description": "This portfolio website"
+        }
+      ]
+    },
+    {
+      "id": "about",
+      "title": "About",
+      "icon": "info",
+      "description": "Learn More About Me",
+      "subItems": [
+        {
+          "name": "Bio",
+          "url": "{bioUrl}",
+          "icon": "user",
+          "action": "external_link",
+          "description": "Personal website"
+        }
+      ]
+    },
+    {
+      "id": "log",
+      "title": "Log",
+      "icon": "document",
+      "description": "Blog Posts & Updates",
+      "subItems": [],
+      "dynamicContent": "blog"
+    }
+  ],
+  "icons": {
+    "user": "M12,4A4,4 0 0,1 16,8A4,4 0 0,1 12,12A4,4 0 0,1 8,8A4,4 0 0,1 12,4M12,14C16.42,14 20,15.79 20,18V20H4V18C4,15.79 7.58,14 12,14Z",
+    "folder": "M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z",
+    "info": "M12,2A10,10 0 0,1 22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12A10,10 0 0,1 12,2M12,17C12.56,17 13,16.56 13,16V12C13,11.44 12.56,11 12,11C11.44,11 11,11.44 11,12V16C11,16.56 11.44,17 12,17M12,9A1,1 0 0,0 13,8A1,1 0 0,0 12,7A1,1 0 0,0 11,8A1,1 0 0,0 12,9Z",
+    "document": "M3,3H21V5H3V3M3,7H21V9H3V7M3,11H21V13H3V11M3,15H21V17H3V15M3,19H21V21H3V19Z",
+    "github": "M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.341-3.369-1.341-.454-1.155-1.11-1.463-1.11-1.463-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.831.092-.646.35-1.086.636-1.336-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.161 22 16.418 22 12c0-5.523-4.477-10-10-10z",
+    "twitter": "M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z",
+    "globe": "M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.94-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z",
+    "gamepad": "M7,6H17A6,6 0 0,1 23,12A6,6 0 0,1 17,18C15.22,18 13.63,17.23 12.53,16H11.47C10.37,17.23 8.78,18 7,18A6,6 0 0,1 1,12A6,6 0 0,1 7,6M6,9V11H4V13H6V15H8V13H10V11H8V9H6M15.5,12A1.5,1.5 0 0,0 14,10.5A1.5,1.5 0 0,0 12.5,12A1.5,1.5 0 0,0 14,13.5A1.5,1.5 0 0,0 15.5,12M18.5,9A1.5,1.5 0 0,0 17,7.5A1.5,1.5 0 0,0 15.5,9A1.5,1.5 0 0,0 17,10.5A1.5,1.5 0 0,0 18.5,9Z"
+  },
+  "meta": {
+    "version": "1.0.0",
+    "description": "XMBFolio Menu Structure Configuration",
+    "lastUpdated": "2024-12-07",
+    "customizable": true,
+    "instructions": {
+      "adding_items": "Add new objects to subItems arrays. Use {configKey} for dynamic values.",
+      "creating_sections": "Add new objects to menuItems array with unique id.",
+      "custom_icons": "Add custom SVG paths to the icons object.",
+      "dynamic_content": "Use 'dynamicContent': 'blog' to populate from blog system.",
+      "template_variables": "Use {username}, {github.username}, {bioUrl}, etc. for dynamic replacement."
+    }
+  }
+}

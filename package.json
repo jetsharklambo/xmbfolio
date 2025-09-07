@@ -1,0 +1,64 @@
+{
+  "name": "xmbfolio",
+  "version": "4.0.0",
+  "description": "A customizable PlayStation 3 XMB-inspired portfolio website with dynamic configuration",
+  "main": "index.html",
+  "scripts": {
+    "dev": "python3 -m http.server 8000",
+    "serve": "python3 -m http.server 8000",
+    "build": "node build.js",
+    "build:dev": "node build.js --dev",
+    "start": "npm run serve",
+    "validate": "node build.js --validate-only",
+    "setup": "cp .env.example .env && echo 'Created .env file. Please customize it with your values.'",
+    "deploy:vercel": "vercel --prod",
+    "deploy:netlify": "netlify deploy --prod --dir=.",
+    "help": "echo 'Available commands: dev, serve, build, setup, validate'"
+  },
+  "devDependencies": {
+    "dotenv": "^16.3.0"
+  },
+  "keywords": [
+    "portfolio",
+    "xmb",
+    "playstation",
+    "webgl",
+    "static-site",
+    "customizable",
+    "blog",
+    "github-api"
+  ],
+  "author": "Jetshark Lambo",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jetsharklambo/xmbfolio.git"
+  },
+  "homepage": "https://github.com/jetsharklambo/xmbfolio#readme",
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead",
+    "not ie <= 11"
+  ],
+  "files": [
+    "*.html",
+    "*.js",
+    "*.css",
+    "*.json",
+    "*.md",
+    "blog/",
+    ".env.example"
+  ],
+  "config": {
+    "build_dir": ".",
+    "config_output": "config.generated.js"
+  },
+  "funding": {
+    "type": "individual",
+    "url": "https://github.com/sponsors/jetsharklambo"
+  }
+}
