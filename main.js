@@ -107,14 +107,18 @@ async function handleKeyDown(event) {
     else if (event.key === 'ArrowRight') {
         direction = DIRECTION.Right;
         await moveMenuItemsHorizontally(direction);
-    } 
+    }
     else if (event.key === 'ArrowUp') {
         direction = DIRECTION.Up;
         await moveSubMenuItemsVertically(direction);
-    } 
+    }
     else if (event.key === 'ArrowDown') {
         direction = DIRECTION.Down;
         await moveSubMenuItemsVertically(direction);
+    }
+    else if (event.key === ' ' || event.key === 'Enter') {
+        event.preventDefault(); // Prevent page scroll on spacebar
+        triggerActiveSubMenuItem();
     }
 }
 
@@ -447,6 +451,34 @@ function updateActiveSubMenuItemStyle() {
 
 function getActiveMenuItem() {
     return menuItemsData.find(item => item.menuItemIndex === activeMenuItemIndex);
+}
+
+/**
+ * Trigger action on currently active sub-menu item (for keyboard shortcuts)
+ */
+function triggerActiveSubMenuItem() {
+    const activeMenuItem = getActiveMenuItem();
+
+    // Check if there are sub-menu items
+    if (activeMenuItem.subMenuItemCount === -1) {
+        console.log('No sub-menu items to trigger');
+        return;
+    }
+
+    // Get the active sub-menu item element
+    const subMenuItems = Array.from(activeMenuItem.subMenuItemContainer.children);
+    const activeSubMenuItem = subMenuItems[activeMenuItem.activeSubMenuItemIndex];
+
+    // Check if this is a blog item
+    if (activeSubMenuItem.hasAttribute('data-blog-index')) {
+        const blogIndex = parseInt(activeSubMenuItem.dataset.blogIndex);
+        window.blogSystem.openBlogLink(blogIndex);
+    } else {
+        // Regular sub-menu item - use menu system handler
+        if (window.menuSystem) {
+            window.menuSystem.handleSubMenuAction(activeSubMenuItem);
+        }
+    }
 }
 
 /**

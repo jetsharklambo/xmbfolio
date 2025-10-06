@@ -171,12 +171,13 @@ Edit `menu-structure.json` to add unlimited:
 
 ### Desktop
 - **Arrow Keys**: Navigate through menus
-- **Mouse**: Click on menu items to navigate
+- **Spacebar/Enter**: Activate selected item (open links)
+- **Mouse**: Click on menu items to navigate and activate
 - **Hover**: Visual feedback on interactive elements
 
 ### Mobile
 - **Touch**: Tap menu items to navigate
-- **Swipe Gestures**: 
+- **Swipe Gestures**:
   - Horizontal swipes: Navigate main menu
   - Vertical swipes: Navigate sub-menus
 
@@ -214,9 +215,11 @@ Write your blog content in Markdown format...
 
 - **GitHub API Integration**: Automatic discovery of new blog posts
 - **Smart Link Generation**: Links to GitHub with anchors to first headings
-- **Frontmatter Parsing**: Automatic title, date, and excerpt extraction  
+- **Frontmatter Parsing**: Automatic title, date, and excerpt extraction
+- **Metadata Display**: Blog posts show title, date, and excerpt in the menu
 - **Zero Configuration**: No manual file registration required
 - **GitHub Rendering**: Posts display with GitHub's native Markdown renderer
+- **Sorted by Date**: Posts automatically sorted newest first
 - **Configurable**: Enable/disable via `ENABLE_BLOG` environment variable
 
 ## 🚨 Troubleshooting

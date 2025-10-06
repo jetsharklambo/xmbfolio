@@ -164,14 +164,21 @@ class BlogSystem {
         const subMenuItem = document.createElement('div');
         subMenuItem.className = 'sub-menu-item';
         subMenuItem.dataset.blogIndex = index;
-        
+
+        const formattedDate = this.formatDate(post.date);
+        const excerpt = post.excerpt || '';
+
         subMenuItem.innerHTML = `
             <svg class="sub-menu-item-icon" viewBox="0 0 24 24" fill="currentColor">
                 <path d="M19,3H5A2,2 0 0,0 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V5A2,2 0 0,0 19,3M13.5,17H7.5L7.5,16L10.5,16V8H9L9,7H13.5V8H12V16H13.5V17Z" />
             </svg>
-            <div class="sub-menu-item-header">${post.title}</div>
+            <div class="sub-menu-item-content">
+                <div class="sub-menu-item-header">${post.title}</div>
+                <div class="sub-menu-item-date">${formattedDate}</div>
+                <div class="sub-menu-item-excerpt">${excerpt}</div>
+            </div>
         `;
-        
+
         console.log('Created blog item with data-blog-index:', subMenuItem.dataset.blogIndex);
         return subMenuItem;
     }
